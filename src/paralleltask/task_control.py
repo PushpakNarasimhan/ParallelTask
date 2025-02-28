@@ -261,6 +261,7 @@ class Run(object):
 		return self.run(cmd)
 
 	def check_alive(self, job):
+     	#Here we may need to parase job status
 		if job.is_finished():
 			log.info(f'JobID:[{job.id}] jobCmd:[{job.path}] has finished.')
 			return False
